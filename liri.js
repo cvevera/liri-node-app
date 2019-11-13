@@ -27,16 +27,41 @@ switch (command) {
         break;
 };
 
-function concertThis() {
-    console.log("Concert this " + parameter)
-};
+// function concertThis() {
+//     axios.get("https://rest.bandsintown.com/artists/" + parameter + "/events?app_id=codingbootcamp")
+//     .then(function(response){
+//     console.log(response.data.venue.name)})
+
+//     .catch(function (error) {
+//         console.log(error);
+//     });
+// };
 
 function spotifyThisSong() {
     console.log("Spotify this " + parameter)
 };
 
 function movieThis() {
-    console.log("Movie this " + parameter)
+    // This makes the default parameter "Mr. Nobody"
+    if (!parameter) {
+        parameter = "Mr. Nobody";
+      }
+    axios.get("https://www.omdbapi.com/?t=" + parameter + "&y=&plot=short&apikey=trilogy")
+    .then(function(response) {
+        var movieData = [
+            "Movie Title: " + response.data.Title,
+            "Year of Release:"  + response.data.Year,
+            "IMDB Rating: " + response.data.imdbRating,
+            "Rotten Tomatoes Rating: " + response.data.Ratings[1].Value,
+            "Country Produced: " + response.data.Country,
+            "Language: " + response.data.Language,
+            "Plot: " + response.data.Plot,
+            "Actors/Actresses: " + response.data.Actors].join("\n\n");
+    console.log(movieData);
+})
+.catch(function (error) {
+console.log(error);
+});
 };
 
 function doWhatItSays() {
