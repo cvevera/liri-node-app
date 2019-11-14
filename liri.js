@@ -44,22 +44,32 @@ function concertThis() {
     });
 };
 
-// function spotifyThisSong() {
-//     spotify.search({ type: 'track', query: parameter }, function (response) {
-//         for (var i = 0; i < 5; i++) {
-//             var spotifyData = [
-//                 "Artist: " + response.tracks.items[i].artists[0].name,
-//                 "Song Name: " + response.tracks.items[i].name,
-//                 "Album Name: " + response.tracks.items[i].album.name,
-//                 "Preview Link: " + response.tracks.items[i].preview_url,
-//             ].join("\n\n");
-//             console.log(spotifyData);
-//         }
-//         })
-//         .catch(function (error) {
-//             console.log(error);
-//         });
-// };
+function spotifyThisSong() {
+    spotify.search({ type: 'track', query: parameter })
+    .then (function (response) {
+        for (var i = 0; i < 5; i++) {
+            var spotifyData = [
+                "Artist: " + response.tracks.items[i].artists[0].name,
+                "Song Name: " + response.tracks.items[i].name,
+                "Album Name: " + response.tracks.items[i].album.name,
+                "Preview Link: " + response.tracks.items[i].preview_url,
+            ].join("\n\n");
+            console.log(spotifyData);
+        }
+     
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+//     spotify
+//   .search({ type: 'track', query: parameter })
+//   .then(function(response) {
+//     console.log(response.tracks.items[0]);
+//   })
+//   .catch(function(err) {
+//     console.log(err);
+//   });
+};
 
 function movieThis() {
     // This makes the default parameter "Mr. Nobody"
