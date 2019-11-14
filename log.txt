@@ -1,0 +1,19 @@
+----------------------------------------
+
+Movie Title: Star Wars: Episode IV - A New Hope
+
+Year of Release:1977
+
+IMDB Rating: 8.6
+
+Rotten Tomatoes Rating: 93%
+
+Country Produced: USA
+
+Language: English
+
+Plot: Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.
+
+Actors: Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing
+
+ 
