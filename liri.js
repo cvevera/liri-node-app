@@ -49,10 +49,12 @@ function spotifyThisSong() {
     .then (function (response) {
         for (var i = 0; i < 5; i++) {
             var spotifyData = [
+                "----------------------------------------",
                 "Artist: " + response.tracks.items[i].artists[0].name,
                 "Song Name: " + response.tracks.items[i].name,
                 "Album Name: " + response.tracks.items[i].album.name,
                 "Preview Link: " + response.tracks.items[i].preview_url,
+                " ",
             ].join("\n\n");
             console.log(spotifyData);
         }
@@ -79,6 +81,7 @@ function movieThis() {
     axios.get("https://www.omdbapi.com/?t=" + parameter + "&y=&plot=short&apikey=trilogy")
         .then(function (response) {
             var movieData = [
+                "----------------------------------------",
                 "Movie Title: " + response.data.Title,
                 "Year of Release:" + response.data.Year,
                 "IMDB Rating: " + response.data.imdbRating,
@@ -86,7 +89,9 @@ function movieThis() {
                 "Country Produced: " + response.data.Country,
                 "Language: " + response.data.Language,
                 "Plot: " + response.data.Plot,
-                "Actors/Actresses: " + response.data.Actors].join("\n\n");
+                "Actors/Actresses: " + response.data.Actors,
+                " ",
+            ].join("\n\n");
             console.log(movieData);
         })
         .catch(function (error) {
