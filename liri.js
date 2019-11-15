@@ -2,16 +2,17 @@ require("dotenv").config();
 
 var keys = require("./keys.js");
 
-var SpotifyAPI = require("node-spotify-api");
-var spotify = new SpotifyAPI(keys.spotify);
+var fs = require("fs");
+
+var axios = require("axios");
 
 var moment = require('moment');
 moment().format("MM/DD/YYYY");
 
-var axios = require("axios");
+var SpotifyAPI = require("node-spotify-api");
+var spotify = new SpotifyAPI(keys.spotify);
 
-var fs = require("fs");
-
+// Grabbing the command and parameter from the command line.
 var command = process.argv[2];
 var parameter = process.argv.slice(3).join(" ");
 
@@ -36,6 +37,7 @@ function concertThis() {
     axios.get("https://rest.bandsintown.com/artists/" + parameter + "/events?app_id=codingbootcamp")
         .then(function (response) {
             for (var i = 0; i < 5; i++) {
+                // Creating a variable to hold and format the date
                 var timeFormat = moment(response.data[i].datetime).format("MM/DD/YYYY");
 
                 var concertData = [
@@ -46,6 +48,7 @@ function concertThis() {
                     " ",
                 ].join("\n\n");
                 console.log(concertData)
+                // loggin all data to the log.txt file (present in all functions except "do-what-it-says")
                 fs.appendFile("log.txt", concertData, function(err) {});
         }})
         .catch(function (error) {
@@ -73,14 +76,6 @@ function spotifyThisSong() {
         .catch(function (error) {
             console.log(error);
         });
-    //     spotify
-    //   .search({ type: 'track', query: parameter })
-    //   .then(function(response) {
-    //     console.log(response.tracks.items[0]);
-    //   })
-    //   .catch(function(err) {
-    //     console.log(err);
-    //   });
 };
 
 function movieThis() {
@@ -93,7 +88,7 @@ function movieThis() {
             var movieData = [
                 "----------------------------------------",
                 "Movie Title: " + response.data.Title,
-                "Year of Release:" + response.data.Year,
+                "Year Released:" + response.data.Year,
                 "IMDB Rating: " + response.data.imdbRating,
                 "Rotten Tomatoes Rating: " + response.data.Ratings[1].Value,
                 "Country Produced: " + response.data.Country,
@@ -160,7 +155,7 @@ function doWhatItSays() {
                     var movieData = [
                         "----------------------------------------",
                         "Movie Title: " + response.data.Title,
-                        "Year of Release:" + response.data.Year,
+                        "Year Released:" + response.data.Year,
                         "IMDB Rating: " + response.data.imdbRating,
                         "Rotten Tomatoes Rating: " + response.data.Ratings[1].Value,
                         "Country Produced: " + response.data.Country,

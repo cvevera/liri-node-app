@@ -16,4 +16,152 @@ Plot: Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee a
 
 Actors: Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing
 
+ -------------------------------------
+
+Venue: Capital's Jingle Bell Ball
+
+Location: London
+
+Event Date: 12/08/2019
+
+ -------------------------------------
+
+Venue: Waldbühne Berlin
+
+Location: Berlin
+
+Event Date: 06/24/2020
+
+ -------------------------------------
+
+Venue: Z100's Jingle Ball Presented by Capital One
+
+Location: New York
+
+Event Date: 12/13/2019
+
+ -------------------------------------
+
+Venue: Werchter Boutique
+
+Location: Rotselaar
+
+Event Date: 06/20/2020
+
+ -------------------------------------
+
+Venue: Capital One JamFest
+
+Location: Atlanta
+
+Event Date: 04/05/2020
+
+ -------------------------------------
+
+Venue: Capital's Jingle Bell Ball
+
+Location: London
+
+Event Date: 12/08/2019
+
+ -------------------------------------
+
+Venue: Z100's Jingle Ball Presented by Capital One
+
+Location: New York
+
+Event Date: 12/13/2019
+
+ -------------------------------------
+
+Venue: Werchter Boutique
+
+Location: Rotselaar
+
+Event Date: 06/20/2020
+
+ -------------------------------------
+
+Venue: Capital One JamFest
+
+Location: Atlanta
+
+Event Date: 04/05/2020
+
+ -------------------------------------
+
+Venue: Waldbühne Berlin
+
+Location: Berlin
+
+Event Date: 06/24/2020
+
+ ----------------------------------------
+
+Artist: G-Eazy
+
+Song Name: I Mean It (feat. Remo)
+
+Preview Link: https://p.scdn.co/mp3-preview/432fc518b825b9dfb9b23a8fa73f38488301d6ec?cid=15e36b9d8c4542109126aebac773a80c
+
+Album Name: These Things Happen
+
+ ----------------------------------------
+
+Artist: Justin Bieber
+
+Song Name: What Do You Mean?
+
+Preview Link: null
+
+Album Name: Purpose (Deluxe)
+
+ ----------------------------------------
+
+Artist: Sarah Jeffery
+
+Song Name: Queen of Mean
+
+Preview Link: null
+
+Album Name: Descendants 3 (Original TV Movie Soundtrack)
+
+ ----------------------------------------
+
+Artist: The Chainsmokers
+
+Song Name: Do You Mean
+
+Preview Link: https://p.scdn.co/mp3-preview/cd53826cc7865a498b2c3615a396e25297bbc849?cid=15e36b9d8c4542109126aebac773a80c
+
+Album Name: World War Joy...Push My Luck
+
+ ----------------------------------------
+
+Artist: Lauv
+
+Song Name: Mean It
+
+Preview Link: https://p.scdn.co/mp3-preview/2bb19508181196b8c2a87552218bdb10485bd24a?cid=15e36b9d8c4542109126aebac773a80c
+
+Album Name: ~how i'm feeling~
+
+ ----------------------------------------
+
+Movie Title: Star Wars: Episode IV - A New Hope
+
+Year Released:1977
+
+IMDB Rating: 8.6
+
+Rotten Tomatoes Rating: 93%
+
+Country Produced: USA
+
+Language: English
+
+Plot: Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.
+
+Actors: Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing
+
  
